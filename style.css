@@ -3,13 +3,11 @@ body {
 }
 
 h1{
-
     color: whitesmoke;
     font-size: 27px;
     text-rendering: optimizeLegibility;
     font-family: 'Urbanist', sans-serif;
     font-family: 'Varela Round', sans-serif;
-
 }
 
 .name-header{
