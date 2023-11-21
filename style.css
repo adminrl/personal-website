@@ -1,3 +1,21 @@
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes animatebottom{
+    from{bottom:-300px;opacity:0} 
+    to{bottom:0;opacity:1}}
+
+.animatebottom{position: relative;
+    animation: animatebottom 0.4s}
+
+/* @keyframes animateleft{
+        from{left:-300px; top: 200px; height: 100%;opacity:0} 
+        to{left:250px; top: 200px; height: 100%;opacity:1}}     */
+
+
 body {
     background-color: rgb(63, 134, 134);
 }
@@ -15,6 +33,8 @@ h1{
     margin: auto;
     width: 50%;
     padding: 100px;
+    position:relative;
+    animation: animatebottom 3s;
 }
 
 p{
@@ -22,3 +42,35 @@ p{
     font-family: 'Urbanist', sans-serif;
     font-family: 'Varela Round', sans-serif;
 }
+
+.side-bar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 200px; /* Stay at the top */
+    left: 250px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 50px;
+  }
+
+  a{
+    color: whitesmoke;
+    text-decoration: none; 
+    padding: 6px 8px 6px 16px;
+    font-size: 15px;
+    display: block;
+    font-family: 'Urbanist', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    position:relative;
+    animation: animatebottom 3s;
+  }
+
+  a:hover{
+    color: wheat;
+    font-weight: 1000;
+    text-decoration: none; 
+    padding: 6px 8px 6px 16px;
+    font-size: 15px;
+    display: block;
+  }
